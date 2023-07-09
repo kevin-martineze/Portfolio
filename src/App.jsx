@@ -5,7 +5,10 @@ import Preloader from "./components/Pre";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import ScrollToTop from './components/ScrollToTop';
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
@@ -27,8 +30,9 @@ function App() {
         <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-      
+          <Route path='/about' element={<About/>}/>
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
